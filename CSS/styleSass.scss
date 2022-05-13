@@ -1,0 +1,140 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  @media (min-width: 768px) {
+    width: 750px;
+  }
+  @media (min-width: 992px) {
+    width: 970px;
+  }
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+}
+body {
+  font-family: "Raleway";
+}
+input::placeholder {
+  font-family: "Raleway";
+  color: #cccccc;
+  font-size: 16px;
+}
+.form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .formSections {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    .caption {
+      width: 30%;
+      padding: 30px 15px 60px 55px;
+      background-color: #00aaff;
+      color: #fbfdfd;
+      font-family: "Raleway";
+      .options {
+        margin-bottom: 90px;
+        h2 {
+          font-size: 35px;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+        p {
+          font-size: 24px;
+          color: cmyk(52%, 17%, 0%, 0%);
+          margin-top: 15px;
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100% !important;
+      }
+      @media (min-width: 768px) {
+        width: 30% !important;
+      }
+    }
+    .formTem {
+      width: 58%;
+      background-color: #f8f8f8;
+      padding: 30px 15px 30px 55px;
+      form {
+        padding: 30px;
+        .error {
+          color: red;
+          font-size: 15px;
+          font-weight: bold;
+          margin-bottom: 20px;
+        }
+        label {
+          color: #575757;
+
+          font-size: 17px;
+          font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          width: 450px;
+        }
+        input {
+          border: none;
+          border-bottom: 1px solid #cccccc;
+          background-color: transparent;
+          margin-bottom: 10px;
+          margin-top: 10px;
+          &:focus {
+            outline: none;
+            border: none;
+          }
+        }
+        .checkBox {
+          margin-top: 30px;
+          input[type="checkbox"] {
+            height: 20px;
+            width: 20px;
+          }
+          span {
+            margin-top: -5;
+          }
+        }
+        button {
+          background-color: #45d53a;
+          color: #fbfdfd;
+          width: 115px;
+          padding: 8px;
+          font-size: 15px;
+          border: none;
+          margin: 25px 0;
+        }
+        span {
+          padding: 10px;
+          color: #575757;
+          a {
+            text-decoration: none;
+            color: #575757;
+            margin-left: 15px;
+            &:hover {
+              cursor: pointer;
+              border-bottom: 1px solid #cccccc;
+            }
+          }
+        }
+      }
+      @media (max-width: 767px) {
+        width: 100% !important;
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+          width: 370px !important;
+        }
+      }
+      @media (min-width: 768px) {
+        width: 58% !important;
+      }
+    }
+  }
+  @media (max-width: 767px) {
+    padding: 10px auto !important;
+  }
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200&display=swap" rel="stylesheet">    <link rel="stylesheet" href="CSS/styleSass.css">
+    <title>Sign Up</title>
+</head>
+<body>
+    <section class="form">
+        <div class="container">
+            <div class="formSections">
+                <div class="caption">
+                    <div class="options">
+                        <h2>Sign Up</h2>
+                        <p>
+                            Sign up with your simple details.
+                            It will nbe cross checked by the administration.
+                        </p>
+                    </div>
+                    <div class="options">
+                        <h2>Sign In</h2>
+                        <p>
+                            Sign in with your username and password.
+                        </p>
+                    </div>
+                </div>
+                <div class="formTem">
+                    <form name="signUp" onsubmit="return FormValidate()" >
+                        <div>
+                            <label for="username">Username</label> <br>
+                            <input type="text" name="username" id="username" placeholder="example new">
+                            <div class="error" id="UsernameError"></div>
+                        </div>
+                
+                        <div>
+                            <label for="num">Phone Number</label><br>
+                            <input type="text" name="num" id="num" placeholder="07 0000 0000">
+                            <div class="error" id="PhoneNumError"></div>
+                        </div>
+                
+                        <div>
+                            <label for="email">EMAIL</label><br>
+                            <input type="email" name="email" id="email" placeholder="example@fx.com">
+                            <div class="error" id="EmailError"></div>
+                        </div>
+                
+                        <div>
+                            <label for="pw">PASSWORD</label><br>
+                            <input type="password" name="pw" id="pw" placeholder="***************" >
+                            <div class="error" id="PasswordError"></div>
+                        </div>
+                
+                        <div class="checkBox">
+                            <input type="checkbox" name="checkBox" id="checkBox" onclick="BoxClicked(this)" > <span>I agree with the terms and conditions</span>
+                            <div class="error" id="CheckBoxError"></div>
+                        </div>
+                        
+                        <div>
+                            <button id="btn">Sign Up</button> <span>or <a href="#">Log in</a></span>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="JS/mainJS.js"></script>
+</body>
+</html>

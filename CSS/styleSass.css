@@ -1,0 +1,160 @@
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+body {
+  font-family: "Raleway";
+}
+
+input::placeholder {
+  font-family: "Raleway";
+  color: #cccccc;
+  font-size: 16px;
+}
+
+.form {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.form .formSections {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.form .formSections .caption {
+  width: 30%;
+  padding: 30px 15px 60px 55px;
+  background-color: #00aaff;
+  color: #fbfdfd;
+  font-family: "Raleway";
+}
+.form .formSections .caption .options {
+  margin-bottom: 90px;
+}
+.form .formSections .caption .options h2 {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+.form .formSections .caption .options p {
+  font-size: 24px;
+  color: cmyk(52%, 17%, 0%, 0%);
+  margin-top: 15px;
+}
+@media (max-width: 767px) {
+  .form .formSections .caption {
+    width: 100% !important;
+  }
+}
+@media (min-width: 768px) {
+  .form .formSections .caption {
+    width: 30% !important;
+  }
+}
+.form .formSections .formTem {
+  width: 58%;
+  background-color: #f8f8f8;
+  padding: 30px 15px 30px 55px;
+}
+.form .formSections .formTem form {
+  padding: 30px;
+}
+.form .formSections .formTem form .error {
+  color: red;
+  font-size: 15px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.form .formSections .formTem form label {
+  color: #575757;
+  font-size: 17px;
+  font-weight: bold;
+}
+.form .formSections .formTem form input[type=text],
+.form .formSections .formTem form input[type=email],
+.form .formSections .formTem form input[type=password] {
+  width: 450px;
+}
+.form .formSections .formTem form input {
+  border: none;
+  border-bottom: 1px solid #cccccc;
+  background-color: transparent;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.form .formSections .formTem form input:focus {
+  outline: none;
+  border: none;
+}
+.form .formSections .formTem form .checkBox {
+  margin-top: 30px;
+}
+.form .formSections .formTem form .checkBox input[type=checkbox] {
+  height: 20px;
+  width: 20px;
+}
+.form .formSections .formTem form .checkBox span {
+  margin-top: -5;
+}
+.form .formSections .formTem form button {
+  background-color: #45d53a;
+  color: #fbfdfd;
+  width: 115px;
+  padding: 8px;
+  font-size: 15px;
+  border: none;
+  margin: 25px 0;
+}
+.form .formSections .formTem form span {
+  padding: 10px;
+  color: #575757;
+}
+.form .formSections .formTem form span a {
+  text-decoration: none;
+  color: #575757;
+  margin-left: 15px;
+}
+.form .formSections .formTem form span a:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #cccccc;
+}
+@media (max-width: 767px) {
+  .form .formSections .formTem {
+    width: 100% !important;
+  }
+  .form .formSections .formTem input[type=text],
+.form .formSections .formTem input[type=email],
+.form .formSections .formTem input[type=password] {
+    width: 370px !important;
+  }
+}
+@media (min-width: 768px) {
+  .form .formSections .formTem {
+    width: 58% !important;
+  }
+}
+@media (max-width: 767px) {
+  .form {
+    padding: 10px auto !important;
+  }
+}
+
+/*# sourceMappingURL=styleSass.css.map */
